@@ -1,48 +1,45 @@
-# Astro Starter Kit: Basics
+# Photo Editor
 
-```sh
-npm create astro@latest -- --template basics
-```
+Un editor de fotos construido con React y Astro.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Descripción
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este proyecto es un editor de fotos que permite a los usuarios aplicar los diferentes filtros de CSS  a una imágen. Está construido utilizando React para la interfaz de usuario y Astro para la generación de contenido estático.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Tecnologías Utilizadas
 
-## 🚀 Project Structure
+- **JavaScript**: Utilizado para la lógica de la aplicación y la manipulación de imágenes.
+- **React**: Utilizado para la construcción de la interfaz de usuario interactiva.
+- **Astro**: Utilizado para la generación de contenido estático y el manejo de rutas.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Instalación
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Para instalar las dependencias y ejecutar el proyecto localmente, sigue estos pasos:
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/c0d3hdz/-Photo_editor.git
 
-## 🧞 Commands
+2.  Navega al directorio del proyecto:
+    ```bash
+    cd -Photo_editor
+3.  Instala las dependencias:
+    ```bash
+    npm install
+4.  Ejecuta el proyecto:
+    ```bash
+    npm start
+## Uso
+Una vez que el proyecto esté en ejecución, abre tu navegador y navega a http://localhost:3000 para ver la aplicación en acción. Aquí podrás cargar tus fotos y aplicar diferentes filtros y efectos.
 
-All commands are run from the root of the project, from a terminal:
+## Contribución
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1.  Haz un fork del repositorio.
+2.  Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
+3.  Realiza tus cambios y haz commit (git commit -am 'Agregar nueva funcionalidad').
+4.  Sube tus cambios a la rama (git push origin feature/nueva-funcionalidad).
+5.  Abre un Pull Request.
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
