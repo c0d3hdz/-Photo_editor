@@ -37,11 +37,7 @@ export default function FilterOptions() {
                 const filter = span.getAttribute('data-filter')
                 const slider = document.getElementById(filter)
                 if (slider) {
-                    if (filter === 'opacity') {
-                        slider.value = 200
-                    }
                     applyFilters()
-                    // Ocultar todos y mostrar solo uno
                     document.querySelectorAll('.slider').forEach(s => {
                         s.parentElement.style.display = s.id === filter ? 'block' : 'none'
                     })
