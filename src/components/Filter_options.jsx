@@ -15,21 +15,34 @@ export default function FilterOptions() {
             const opacity = document.getElementById('opacity')?.value || 100
             const blur = document.getElementById('blur')?.value || 0
 
+            console.log('Applying filters:', {
+                saturate,
+                brightness,
+                contrast,
+                hue,
+                grayscale,
+                invert,
+                sepia,
+                opacity,
+                blur,
+            })
+
             image.style.filter = `
-        saturate(${saturate}%)
-        brightness(${brightness}%)
-        contrast(${contrast}%)
-        hue-rotate(${hue}deg)
-        grayscale(${grayscale}%)
-        invert(${invert}%)
-        sepia(${sepia}%)
-        opacity(${opacity}%)
-        blur(${blur}px)
+            saturate(${saturate}%)
+            brightness(${brightness}%)
+            contrast(${contrast}%)
+            hue-rotate(${hue}deg)
+            grayscale(${grayscale}%)
+            invert(${invert}%)
+            sepia(${sepia}%)
+            opacity(${opacity}%)
+            blur(${blur}px)
         `
         }
 
         document.querySelectorAll('.slider').forEach(slider => {
             slider.addEventListener('input', applyFilters)
+            console.log('Slider event registered:', slider)
         })
 
         document.querySelectorAll('.Selection span').forEach(span => {
@@ -43,6 +56,7 @@ export default function FilterOptions() {
                     })
                 }
             })
+            console.log('Span event registered:', span)
         })
     }, [])
 
